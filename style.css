@@ -182,7 +182,7 @@ button:hover {
 }
 @media screen and (max-width: 460px) {
   body {
-    padding: 40px 15px;
+    padding: 40px 5px;
   }
   .books-container {
     display: grid;
@@ -199,14 +199,14 @@ button:hover {
     margin-right: 0px;
   }
   .title-container {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0px;
   }
   .add-title {
     font-size: 14px;
   }
   .title-container img {
-    width: 25px;
+    width: 30px;
   }
   .filter-container {
     flex-direction: column;
@@ -230,7 +230,10 @@ button:hover {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 312px) {
+@media screen and (max-width: 355px) {
+    .title-container{
+      font-size: 10px;
+    }
     .title-container img{
         display: none;
     }
