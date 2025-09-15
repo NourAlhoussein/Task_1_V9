@@ -215,11 +215,12 @@ button:hover {
   }
   .book-card,
   .book-title,
-  .book-author {
-    font-size: 12px;
+  .book-author,
+  .book-category {
+    font-size: 14px;
   }
   .book-card button {
-    font-size: 10px;
+    font-size: 12px;
   }
   input {
     padding: 5px;
