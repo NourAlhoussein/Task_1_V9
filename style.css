@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  padding: 50px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b1a89e, #14100f);
+  color: white;
+}
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+.title-container img {
+  width: 60px;
+}
+.add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.add-container input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+input {
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+}
+input:focus-visible {
+  outline: none;
+}
+.select-class {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+}
+.select-class:focus-visible {
+  outline: none;
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(228, 227, 215, 0.9);
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  gap: 8px;
+  transition: transform 0.3s ease;
+  font-size: 16px;
+  padding: 20px;
+  width: 80%;
+}
+.available {
+  color: green;
+}
+.not-available {
+  color: red;
+}
+.book-card:hover {
+  transform: translateY(-6px);
+}
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.book-author {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+.book-card button {
+  flex: 1;
+  margin: 4px 2px;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px 0px;
+}
+.submit-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.submit-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+button:hover {
+  background-color: #252525;
+}
+.w-60 {
+  width: 60px;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  body {
+    padding: 50px 20px;
+  }
+  .books-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .add-container #addBookForm {
+    width: 90%;
+  }
+  .add-container input {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    padding: 40px 15px;
+  }
+  .books-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .add-container #addBookForm {
+    width: 80%;
+  }
+  .add-container input {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .title-container {
+    font-size: 14px;
+  }
+  .title-container img {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 460px) {
+  body {
+    padding: 40px 15px;
+  }
+  .books-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .add-container #addBookForm {
+    width: 80%;
+  }
+  .add-container input {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .title-container {
+    font-size: 10px;
+    letter-spacing: 0px;
+  }
+  .add-title {
+    font-size: 14px;
+  }
+  .title-container img {
+    width: 25px;
+  }
+  .filter-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .book-card,
+  .book-title,
+  .book-author {
+    font-size: 12px;
+  }
+  .book-card button {
+    font-size: 10px;
+  }
+  input {
+    padding: 5px;
+    font-size: 12px;
+  }
+  .select-class {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 312px) {
+    .title-container img{
+        display: none;
+    }
+}

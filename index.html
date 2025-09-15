@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Library</title>
+  </head>
+  <body class="roboto">
+    <div class="title-container">
+      <img src="./images/book.png" alt="" />
+      <h1>Library Management System</h1>
+    </div>
+
+    <!-- Search and filter -->
+    <div class="filter-container">
+      <input
+        type="text"
+        placeholder="Search by title or author...."
+        name=""
+        id="searchInput"
+      />
+      <select name="" id="categoryFilter" class="select-class"></select>
+    </div>
+    <!-- Books container -->
+    <div id="booksContainer" class="books-container"></div>
+
+    <!--Add new book-->
+    <div class="add-container">
+      <h2 class="add-title">Add a New Book</h2>
+      <form id="addBookForm">
+        <input type="text" id="titleInput" placeholder="Title" required />
+        <input type="text" id="authorInput" placeholder="Author" required />
+        <input type="text" id="categoryInput" placeholder="Category" required />
+        <div class="submit-div">
+          <button type="submit" class="submit-btn">Add Book</button>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
