@@ -78,7 +78,7 @@ class ReferenceBook extends Book {
 const library = new Library();
 
 // Add some test books
-library.addBook(new Book("Math", "EN : Nour", "Science"));
+library.addBook(new Book("Math", "Nour", "Science"));
 library.addBook(new Book("JavaScript Basics", "John Doe", "Programming"));
 library.addBook(new Book("React Basics", "John Doe", "Programming"));
 library.addBook(new Book("UI & UX", "John Doe", "Design"));
